@@ -1,0 +1,126 @@
+@import './settings/colors';
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    text-transform: capitalize;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    & li {
+       margin: 0 10px;
+       text-transform: uppercase; 
+    }
+}
+
+.burger {
+    display:none;
+    cursor: pointer;
+}
+
+.burger {
+    & span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: $text;
+        margin: 5px;
+        transition: all 0.4s ease;
+    }
+}
+
+//
+//media query
+//
+
+@media screen and (max-width: 786px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .main-nav-list {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+        & li {
+            margin: 0 25px;
+            opacity: 0;
+        }
+    }
+
+    .burger {
+        display: block;
+    }
+
+}
+
+//
+//classes to toggle
+//
+
+.nav-active {
+    transform: translateX(0%);
+
+    & li:nth-of-type(1){
+        animation: navLiFade 0.5s ease forwards 0.15s;
+    }
+    & li:nth-of-type(2){
+        animation: navLiFade 0.5s ease forwards 0.3s;
+    }
+    & li:nth-of-type(3){
+        animation: navLiFade 0.5s ease forwards 0.45s;
+    }
+    & li:nth-of-type(4){
+        animation: navLiFade 0.5s ease forwards 0.6s;
+    }
+}
+
+.burger-clicked {
+    & span:nth-of-type(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    & span:nth-of-type(2) {
+        transform: rotate(90deg) translate(-10px, 12px);
+        opacity: 0;
+    }
+    & span:nth-of-type(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+//
+//animation
+//
+
+@keyframes navLiFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
