@@ -1,0 +1,12 @@
+@import './settings/colors';
+@import './settings/fonts';
+
+body {
+    background-color: $background;
+    font-family: $font-main;
+    color: $text;
+
+    height: 2000px;
+}
+
+@import 'Header';
