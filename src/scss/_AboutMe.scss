@@ -1,0 +1,19 @@
+.about-me-txt p{
+    font-size: 1.25em;
+    margin:25px 80px;
+    text-align: justify;
+
+    & span {
+        font-weight: 800;
+        transition: 0.5s;
+
+        &:hover {
+            color: #ffffff;
+            background: #aaaaaa;
+            cursor: pointer;
+            transition: 0.5s;
+            border-radius: 10px;
+            padding: 0 4px;
+        }
+    }
+}

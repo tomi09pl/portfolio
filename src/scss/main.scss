@@ -22,4 +22,11 @@ h3 {
     margin: 10px 25px;
 }
 
-@import 'Header', 'Portfolio', 'PortfolioBox', 'Skills';
+// * {
+//     background: #000 !important;
+//     color: #0f0 !important;
+//     outline: solid #f00 1px !important;
+// }
+
+@import 'Header', 'Portfolio', 'PortfolioBox',
+        'Skills', 'AboutMe';
