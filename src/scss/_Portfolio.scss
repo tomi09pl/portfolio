@@ -1,0 +1,16 @@
+
+.boxes-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 786px) {
+
+    .boxes-wrapper {
+        justify-content: flex-start;
+        margin-left: 25px;
+    }
+
+}

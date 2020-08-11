@@ -9,4 +9,17 @@ body {
     height: 2000px;
 }
 
-@import 'Header';
+h1 {
+    font-weight: 200;
+    letter-spacing: 0.355em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 400;
+    letter-spacing: 0.355em;
+    text-transform: capitalize;
+    margin: 10px 25px;
+}
+
+@import 'Header', 'Portfolio', 'PortfolioBox', 'Skills';

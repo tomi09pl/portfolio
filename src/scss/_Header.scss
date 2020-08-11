@@ -1,17 +1,28 @@
 @import './settings/colors';
 
+.header-wrapper {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: all 2s ease;
 }
 
 .logo {
     text-transform: capitalize;
+    margin: 15px 25px;
 }
 
 .main-nav {
-    display: flex;
     justify-content: space-around;
+    transition: all 0.4s ease;
 }
 
 .main-nav-list {
@@ -19,7 +30,7 @@ header {
     display: flex;
     margin: 0;
     & li {
-       margin: 0 10px;
+       margin: 15px 10px;
        text-transform: uppercase; 
     }
 }
@@ -27,6 +38,7 @@ header {
 .burger {
     display:none;
     cursor: pointer;
+    margin: 15px 0;
 }
 
 .burger {
@@ -46,16 +58,20 @@ header {
 
 @media screen and (max-width: 786px) {
 
-    body {
-        overflow: hidden;
+    // body {
+    //     overflow-x: hidden;
+    // }
+
+    header {
+        justify-content: space-between;
     }
 
     .main-nav-list {
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: black;
+        height: 100vh;
+        // top: 8vh;
+        background-color: $mobileMenu;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -63,6 +79,7 @@ header {
         padding: 0;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
 
         & li {
             margin: 0 25px;
@@ -72,6 +89,7 @@ header {
 
     .burger {
         display: block;
+        margin-right: 45px;
     }
 
 }
@@ -79,6 +97,10 @@ header {
 //
 //classes to toggle
 //
+
+.scrolled {
+    position: fixed;
+}
 
 .nav-active {
     transform: translateX(0%);
