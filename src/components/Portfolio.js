@@ -13,7 +13,7 @@ const projects = [
     },
     {
         name: 'Give Away in Good Hands',
-        tech: ['HTML5', 'SASS', 'ReactJS', 'PHP'],
+        tech: ['HTML5', 'SASS', 'ReactJS'],
         image: giveaway,
         demo: 'https://tomi09pl.github.io/give_away/#/',
         code: 'https://github.com/tomi09pl/give_away'

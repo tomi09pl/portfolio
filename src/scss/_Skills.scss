@@ -7,7 +7,7 @@
 }
 
 .costam {
-    background: linear-gradient(0deg, rgba(0,10,11,1) 8%, rgba(255,255,255,1)  100%);
+    // background: linear-gradient(0deg, rgba(0,10,11,1) 8%, rgba(255,255,255,1)  100%);
     width: 46vw;
     margin: 15px 0;
 }
@@ -20,5 +20,106 @@
         text-transform: uppercase;
         font-family: $font-alt;
         text-align: center;
+    }
+}
+
+.fa-html5 {
+    transition: 0.5s;
+
+    &:hover {
+        color: #e34c26;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+
+.fa-css3-alt{
+    transition: 0.5s;
+
+    &:hover {
+        color: #264de4;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+.fa-sass{
+    transition: 0.5s;
+
+    &:hover {
+        color: #cd6799;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+.fa-js-square{
+    transition: 0.5s;
+
+    &:hover {
+        color: #ff0;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+.fa-react{
+    transition: 0.5s;
+
+    &:hover {
+        color: #61dbfb;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+.fa-git-alt{
+    transition: 0.5s;
+
+    &:hover {
+        color: #007c00;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+.fa-npm{
+    transition: 0.5s;
+
+    &:hover {
+        color: #c53635;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+.fa-adobe{
+    transition: 0.5s;
+
+    &:hover {
+        color: #30a3f7;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+.fa-gulp{
+    transition: 0.5s;
+
+    &:hover {
+        color: #cf4647;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+.fa-slack{
+    transition: 0.5s;
+
+    &:hover {
+        color: #4b164c;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+.fa-trello{
+    transition: 0.5s;
+
+    &:hover {
+        color: #0079bf;
+        cursor: pointer;
+        transition: 0.5s;
     }
 }
