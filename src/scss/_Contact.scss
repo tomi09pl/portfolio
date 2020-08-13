@@ -1,0 +1,25 @@
+@import './settings/colors';
+
+.section-wrapper {
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-at{
+    font-size: 100px;
+    color: $text;
+    margin: 25px;
+}
+.fa-github {
+    color: #161414;
+}
+.fa-linkedin {
+    color: #0077b5;
+}

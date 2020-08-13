@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
 import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Portfolio/>
       <Skills/>
       <AboutMe/>
+      <Contact/>
     </div>
   );
 }
