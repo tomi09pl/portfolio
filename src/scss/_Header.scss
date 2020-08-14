@@ -34,6 +34,12 @@ header {
     }
 }
 
+.header-nav-list-link {
+    cursor: pointer;
+
+    
+}
+
 .burger {
     display:none;
     cursor: pointer;
@@ -69,8 +75,7 @@ header {
         position: absolute;
         right: 0px;
         height: 100vh;
-        // top: 8vh;
-        background-color: $mobileMenu;
+        background-color: $background;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -99,6 +104,9 @@ header {
 
 .scrolled {
     position: fixed;
+    background: $background;
+    top: 0;
+    z-index: 999;
 }
 
 .nav-active {

@@ -12,7 +12,7 @@ export default class AboutMe extends React.Component {
 
     render(){
         return(
-            <div>
+            <div name='aboutMe'>
                 <h1>about me</h1>
                 <section className='about-me-txt'>
                     <p>

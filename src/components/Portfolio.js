@@ -46,7 +46,7 @@ export default class Portfolio extends React.Component {
 
     render(){
         return(
-            <div className='portfolio-wrapper'>
+            <div className='portfolio-wrapper' name='portfolio'>
                 <h1>portfolio</h1>
 
                 <div className='boxes-wrapper'>

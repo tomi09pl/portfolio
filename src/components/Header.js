@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 export default class Header extends React.Component {
 
@@ -55,10 +56,42 @@ export default class Header extends React.Component {
 
                     <nav className='main-nav'>
                         <ul className= {active ? 'main-nav-list nav-active' : 'main-nav-list'}>
-                            <li>portfolio</li>
-                            <li>skills</li>
-                            <li>about me</li>
-                            <li>contact</li>
+                            <li><Link 
+                                    activeClass='active'
+                                    to='portfolio'  
+                                    spy={true}
+                                    smooth={true}
+                                    duration={600}
+                                    offset={-100}
+                                    className='header-nav-list-link'
+                                >portfolio</Link></li>
+                            <li><Link 
+                                    activeClass='active'
+                                    to='skills'  
+                                    spy={true}
+                                    smooth={true}
+                                    duration={600}
+                                    offset={-50}
+                                    className='header-nav-list-link'
+                                >skills</Link></li>
+                            <li><Link 
+                                    activeClass='active'
+                                    to='aboutMe'  
+                                    spy={true}
+                                    smooth={true}
+                                    duration={600}
+                                    offset={-50}
+                                    className='header-nav-list-link'
+                                >about me</Link></li>
+                            <li><Link 
+                                    activeClass='active'
+                                    to='contact'  
+                                    spy={true}
+                                    smooth={true}
+                                    duration={600}
+                                    offset={-50}
+                                    className='header-nav-list-link'
+                                >contact</Link></li>
                         </ul>
 
                         <div className={active? 'burger burger-clicked' : 'burger'} onClick={this.toggleClass}>

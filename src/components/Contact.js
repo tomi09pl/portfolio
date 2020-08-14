@@ -12,7 +12,7 @@ export default class Contact extends React.Component {
 
     render(){
         return(
-            <div>
+            <div name='contact'>
                 <h1>contact</h1>
                 <div className='section-wrapper'>
                     
@@ -21,10 +21,10 @@ export default class Contact extends React.Component {
 
                         <div className='icon-wrapper'>
                             <div>
-                                <a href='https://github.com/tomi09pl' target='_blank' rel="noopener noreferrer">
+                                <a href='mailto:tr.kawalek@gmail.com' target='_blank' rel="noopener noreferrer">
                                     <i class="fas fa-at"></i>
                                 </a>
-                                <span>tomasz.kawalek@gmail.com</span>
+                                <span>tr.kawalek@gmail.com</span>
                             </div>
                             <div>
                                 <a href='https://github.com/tomi09pl' target='_blank' rel="noopener noreferrer">

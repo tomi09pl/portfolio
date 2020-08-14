@@ -34,7 +34,7 @@
 .formMessage {
     @extend .formUp;
     padding: .75em 1em;
-    width: 370px; height: 290px;
+    width: 370px; height: 180px;
 }
 
 @media screen and (max-width: 426px) {
@@ -78,4 +78,16 @@
     color: $background;
     cursor: pointer;
     transition: 0.5s;
+  }
+
+
+  .input-error {
+    border: 1px solid red;
+  }
+
+  .input-error-txt {
+    color: red;
+    display: block;
+    font-size: 0.875em;
+    text-align: center;
   }
