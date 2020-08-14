@@ -6,6 +6,12 @@
     justify-content: space-around;
 }
 
+@media screen and (max-width: 1246px) {
+    .section-wrapper {
+        display: block;
+    }
+}
+
 
 .icon-wrapper {
     display: flex;

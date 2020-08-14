@@ -1,0 +1,81 @@
+@import './settings/colors';
+
+.formBox {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+@media screen and (max-width: 786px) {
+    .formBox{
+        flex-direction: column;
+        margin-left: 25px;
+    }
+    
+}
+
+.formUp {
+    border-radius: 2em;
+    border: 1px solid $text;
+    box-shadow: inset 0 1px 3px #ddd;
+    box-sizing: border-box;
+    color: $text;
+    margin: 15px;
+    padding: .5em 1em;
+    outline: none;
+    transition: 0.5s;
+
+    &:focus {
+        border-radius: 0;
+        transition: 0.5s;
+    }
+}
+
+.formMessage {
+    @extend .formUp;
+    padding: .75em 1em;
+    width: 370px; height: 290px;
+}
+
+@media screen and (max-width: 426px) {
+    .formMessage {
+        width: 278px;
+    }
+}
+
+.sendButton-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sendButton {
+    color: $text;
+    // width: 100px;
+    align-self: center;
+    border: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 25px;
+    padding: 10px 20px;
+    // box-sizing: border-box;
+    box-shadow: none;
+    background-color: transparent;
+    transition: 0.5s;
+    display: block;
+  }
+
+  @media screen and (max-width: 786px) {
+    .sendButton{
+        border: 1px solid $text;
+        border-radius: 2em;
+    }
+    
+}
+  
+  .sendButton:hover{
+    background-color: $text;
+    border-radius: 2em;
+    color: $background;
+    cursor: pointer;
+    transition: 0.5s;
+  }
