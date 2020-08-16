@@ -39,6 +39,12 @@ export default class Header extends React.Component {
         })
     }
 
+    activeFalse = () => {
+        this.setState({
+            active: false
+        })
+    }
+
     
     render(){
 
@@ -49,9 +55,19 @@ export default class Header extends React.Component {
                 {/* <header className={scrolled ? 'scrolled' : ''}> */}
                 <header className='scrolled'>
                     <div className='logo'>
-                        <span>tomasz kawalek</span>
-                        <span> • </span>
-                        <span>front-end developer</span>
+                        <Link 
+                            activeClass='active'
+                            to='portfolio'  
+                            spy={true}
+                            smooth={true}
+                            duration={600}
+                            offset={-100}
+                            className='main-nav-list-link'
+                            onClick={this.activeFalse}
+                        ><span>tomasz kawalek</span>
+                         <span> &#8226; </span>
+                         <span>front-end developer</span>
+                        </Link>
                     </div>
 
                     <nav className='main-nav'>
@@ -63,7 +79,8 @@ export default class Header extends React.Component {
                                     smooth={true}
                                     duration={600}
                                     offset={-100}
-                                    className='header-nav-list-link'
+                                    className='main-nav-list-link'
+                                    onClick={this.activeFalse}
                                 >portfolio</Link></li>
                             <li><Link 
                                     activeClass='active'
@@ -72,7 +89,8 @@ export default class Header extends React.Component {
                                     smooth={true}
                                     duration={600}
                                     offset={-50}
-                                    className='header-nav-list-link'
+                                    className='main-nav-list-link'
+                                    onClick={this.activeFalse}
                                 >skills</Link></li>
                             <li><Link 
                                     activeClass='active'
@@ -81,7 +99,8 @@ export default class Header extends React.Component {
                                     smooth={true}
                                     duration={600}
                                     offset={-50}
-                                    className='header-nav-list-link'
+                                    className='main-nav-list-link'
+                                    onClick={this.activeFalse}
                                 >about me</Link></li>
                             <li><Link 
                                     activeClass='active'
@@ -90,7 +109,8 @@ export default class Header extends React.Component {
                                     smooth={true}
                                     duration={600}
                                     offset={-50}
-                                    className='header-nav-list-link'
+                                    onClick={this.activeFalse}
+                                    className='main-nav-list-link'
                                 >contact</Link></li>
                         </ul>
 

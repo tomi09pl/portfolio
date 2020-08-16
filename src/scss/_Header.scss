@@ -34,7 +34,7 @@ header {
     }
 }
 
-.header-nav-list-link {
+.main-nav-list-link {
     cursor: pointer;
 
     
@@ -73,7 +73,8 @@ header {
 
     .main-nav-list {
         position: absolute;
-        right: 0px;
+        right: 0;
+        top: 0;
         height: 100vh;
         background-color: $background;
         display: flex;

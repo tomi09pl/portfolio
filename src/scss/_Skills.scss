@@ -6,10 +6,15 @@
     justify-content: center;
 }
 
-.costam {
-    // background: linear-gradient(0deg, rgba(0,10,11,1) 8%, rgba(255,255,255,1)  100%);
+.icons-container {
     width: 46vw;
     margin: 15px 0;
+}
+
+@media screen and (max-width: 786px) {
+    .icons-container {
+        text-align: center;
+    }
 }
 
 .fab {

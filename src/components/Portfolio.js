@@ -2,6 +2,8 @@ import React from 'react';
 import PortfolioBox from './PortfolioBox';
 import billycune from '../assets/billycune.png';
 import giveaway from '../assets/giveaway.png';
+import eyoga from '../assets/eyoga.png'
+import portfolio from '../assets/portfolio.png'
 
 const projects = [
     {
@@ -19,18 +21,18 @@ const projects = [
         code: 'https://github.com/tomi09pl/give_away'
     },
     {
-        name: 'Billy Cune',
-        tech: ['HTML5', 'SASS', 'ReactJS', 'PHP'],
-        image: billycune,
-        demo: 'https:\\www.billycune.com',
-        code: 'https:\\github.com'
+        name: 'Portfolio',
+        tech: ['HTML5', 'SASS', 'ReactJs'],
+        image: portfolio,
+        demo: 'https://tomi09pl.github.io/portfolio/',
+        code: 'https://github.com/tomi09pl/portfolio'
     },
     {
-        name: 'Billy Cune',
-        tech: ['HTML5', 'SASS'],
-        image: billycune,
-        demo: 'https:\\www.billycune.com',
-        code: 'https:\\github.com'
+        name: 'Eyes Yoga',
+        tech: ['HTML5', 'SASS', 'ReactJS'],
+        image: eyoga,
+        demo: 'https://tomi09pl.github.io/eyoga/#/',
+        code: 'https://github.com/tomi09pl/eyoga'
     },
 ]
 

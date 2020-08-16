@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll'
 
 export default class AboutMe extends React.Component {
 
@@ -27,7 +28,15 @@ export default class AboutMe extends React.Component {
                         If you're still reading this - thank you! ...And I won't bore you with my hobbies :) 
                     </p>
                     <p>
-                        If you'd like to get in touch please see my <span>contact</span> section.
+                        If you'd like to get in touch please see my <Link 
+                                    activeClass='active'
+                                    to='contact'  
+                                    spy={true}
+                                    smooth={true}
+                                    duration={600}
+                                    offset={-100}
+                                    className='header-nav-list-link'
+                                >contact</Link> section.
                     </p>
                 </section>
             </div>

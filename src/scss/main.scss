@@ -5,8 +5,6 @@ body {
     background-color: $background;
     font-family: $font-main;
     color: $text;
-
-    height: 2000px;
 }
 
 h1 {
@@ -29,4 +27,5 @@ h3 {
 // }
 
 @import 'Header', 'Portfolio', 'PortfolioBox',
-        'Skills', 'AboutMe', 'Contact', 'ContactForm';
+        'Skills', 'AboutMe', 'Contact', 'ContactForm',
+        'Footer';

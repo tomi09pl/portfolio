@@ -15,7 +15,7 @@ export default class Skills extends React.Component {
             <div name='skills'>
                 <h1>skills</h1>
                     <div className='skills-wrapper'>
-                        <div className='frontend-wrapper costam'>
+                        <div className='frontend-wrapper icons-container'>
                             <div className='headers'>
                                 <h3>front-end</h3>
                             </div>
@@ -27,7 +27,7 @@ export default class Skills extends React.Component {
                                 <i className="fab fa-react"><div>react</div></i>                              
                             </div>
                         </div>
-                        <div className='others-wrapper costam'>
+                        <div className='others-wrapper icons-container'>
                             <h3>other tools</h3>
                             <div className='others-icons'>
                                 <i className="fab fa-git-alt"><div>git</div></i>

@@ -3,7 +3,7 @@
 .portfolio-box {
     display: flex;
     flex-direction: column;
-    flex: 45% 0;
+    flex: 45% 1;
     text-align: center;
     & p {
         text-transform: uppercase;
@@ -63,11 +63,17 @@
         transition: 0.2s;
 
         &:hover {
-            // background: darken($color: $background, $amount: 50);
-            // color: darken($color: $background, $amount: 75); 
             background: $background;
             color: $text;
             border-radius: 15px;           
         }
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .project-btns {
+        opacity: 1;
+        top: 85%;
+
     }
 }
