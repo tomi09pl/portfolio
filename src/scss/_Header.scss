@@ -19,6 +19,12 @@ header {
     margin: 15px 25px;
 }
 
+@media screen and (max-width: 388px) {
+    .logo span:nth-of-type(2){
+        display: none;
+    }
+}
+
 .main-nav {
     justify-content: space-around;
     transition: all 0.4s ease;
@@ -35,9 +41,14 @@ header {
 }
 
 .main-nav-list-link {
-    cursor: pointer;
+    cursor: pointer;  
+}
 
-    
+@media screen and (max-width: 388px) {
+    .main-nav-list-link {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .burger {

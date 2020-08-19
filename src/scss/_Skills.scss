@@ -34,7 +34,7 @@
     &:hover {
         color: #e34c26;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
     }
 }
 
@@ -44,7 +44,7 @@
     &:hover {
         color: #264de4;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
     }
 }
 .fa-sass{
@@ -53,7 +53,7 @@
     &:hover {
         color: #cd6799;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
     }
 }
 .fa-js-square{
@@ -62,7 +62,7 @@
     &:hover {
         color: #ff0;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
     }
 }
 .fa-react{
@@ -71,7 +71,7 @@
     &:hover {
         color: #61dbfb;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
     }
 }
 .fa-git-alt{
@@ -80,7 +80,7 @@
     &:hover {
         color: #007c00;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
     }
 }
 .fa-npm{
@@ -89,7 +89,7 @@
     &:hover {
         color: #c53635;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
     }
 }
 .fa-adobe{
@@ -98,7 +98,7 @@
     &:hover {
         color: #30a3f7;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
     }
 }
 .fa-gulp{
@@ -107,7 +107,7 @@
     &:hover {
         color: #cf4647;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
     }
 }
 .fa-slack{
@@ -116,7 +116,7 @@
     &:hover {
         color: #4b164c;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
     }
 }
 .fa-trello{
@@ -125,6 +125,43 @@
     &:hover {
         color: #0079bf;
         cursor: pointer;
-        transition: 0.5s;
+        transition: 0.25s;
+    }
+}
+
+@media screen and (max-width: 786px){
+    .fa-html5 {
+            color: #e34c26;
+        }
+    
+    .fa-css3-alt{
+        color: #264de4;
+    }
+    .fa-sass{
+        color: #cd6799;
+    }
+    .fa-js-square{
+        color: #ff0;
+    }
+    .fa-react{
+        color: #61dbfb;
+    }
+    .fa-git-alt{
+        color: #007c00;
+    }
+    .fa-npm{
+        color: #c53635;
+    }
+    .fa-adobe{
+        color: #30a3f7;
+    }
+    .fa-gulp{
+        color: #cf4647;
+    }
+    .fa-slack{
+        color: #4b164c;
+    }
+    .fa-trello{
+        color: #0079bf;
     }
 }
