@@ -11,7 +11,7 @@ const projects = [
         tech: ['HTML5', 'SASS', 'ReactJS', 'PHP'],
         image: billycune,
         demo: 'https://www.billycune.com',
-        code: 'https://github.com'
+        code: 'https://github.com/tomi09pl/billycune'
     },
     {
         name: 'Give Away in Good Hands',
