@@ -29,7 +29,7 @@ if($_SERVER['HTTP_REFERER'] === "http://localhost:3000/" || $_SERVER['HTTP_REFER
             $mail->Host       = 'smtp.gmail.com';                // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                             // Enable SMTP authentication
             $mail->Username   = 'hybrydybry@gmail.com';           // SMTP username
-            $mail->Password   = 'z6VWz8dFDph7kCv';                        // SMTP password
+            $mail->Password   = '*******';                        // SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
             $mail->Port       = 587;
 
