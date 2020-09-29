@@ -75,17 +75,15 @@ export default class ContactForm extends React.Component{
         if (!hasErrors) {
             const data = {name: this.state.name, email:this.state.email, message:this.state.message};
 
-            fetch(`https://${window.location.host}/index.php`, {
+            fetch(`https://www.tomaszkawalek.com/index.php`, {
             method: 'POST',
             headers: {
-                "Content-Type": "application/json"
+                'Accept': 'application/json',
+                'Content-type': 'application/json'
             },
             body: JSON.stringify(data)
-        })
-            .then((resp)=> {
-                return resp.json();
             })
-            .then (data => {
+            .then (() => {
                 this.setState({
                     successFlag: true,
                     name: '',
@@ -98,7 +96,7 @@ export default class ContactForm extends React.Component{
                 this.setState({
                     fetchError: true
                 });
-            })
+            });
         }
     };
 
